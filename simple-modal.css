@@ -4,10 +4,10 @@ div.simple-modal {
     background-color: #fff;
 
     /* ANIMATION */
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
+    -webkit-transition-property: opacity transform;
+    -moz-transition-property: opacity transform;
+    -o-transition-property: opacity transform;
+    transition-property: opacity transform;
     -webkit-transition-duration: 200ms;
     -moz-transition-duration: 200ms;
     -o-transition-duration: 200ms;
@@ -20,4 +20,11 @@ div.simple-modal.animate {
     -webkit-opacity: 0;
     -moz-opacity: 0;
     opacity: 0;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0 95%;
+    -moz-transform-origin: 0 95%;
+    transform-origin: 0 95%;
 }

@@ -1,7 +1,7 @@
 Package.describe({
   name: 'frozeman:simple-modal',
   summary: 'A simple modal to be triggered using a session variable',
-  version: '0.0.3',
+  version: '0.0.4',
   git: 'http://github.com/frozeman/meteor-simple-modal'
 });
 
