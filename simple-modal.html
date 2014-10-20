@@ -1,0 +1,10 @@
+<template name="simpleModal">
+    {{#if showModal}}
+        {{#Animate}}
+            <div class="simple-modal animate {{class}}">
+                {{> Template.contentBlock}}
+                {{> yield region="modalContent"}}
+            </div>
+        {{/Animate}}
+    {{/if}}
+</template>
