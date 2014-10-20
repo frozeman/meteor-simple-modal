@@ -26,7 +26,7 @@ Template['simpleModal'].rendered = function(){
     var template = this;
 
     template._modalDocumentClickEvent = function(e){
-        if(template.find('.simple-modal') && !$(e.target).hasClass('simple-modal') && !$(e.target).parents('.simple-modal').hasClass('simple-modal'))
+        if(template.find('.simple-modal') && !$(e.target).hasClass('simple-modal') && !$(e.target).parents('.simple-modal').hasClass('simple-modal') && template.data)
             Session.set(template.data.trigger, false);
     };
     $(document).on('click', template._modalDocumentClickEvent);
@@ -40,7 +40,7 @@ Template['simpleModal'].destroyed = function(){
     if(this._modalDocumentClickEvent)
         $(document).off('click', this._modalDocumentClickEvent);
 
-    if(this.data.trigger)
+    if(template.data && this.data.trigger)
         Session.set(this.data.trigger, false);
 };
 

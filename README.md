@@ -1,6 +1,6 @@
 # Simple Modal
 
-This package adds a simple modal menu, which can be either shown using a Session variable, or using iron router with a region.
+This package adds a simple modal menu, which can be shown using a Session variable.
 
 ![Alt text](/screenshot.png?raw=true "Screenshot of a styled modal")
 
@@ -12,6 +12,7 @@ To use the modal with a Session trigger simply add the modal somewhere in you te
         // html content
     {{/simpleModal}}
 
+If you don't pass a trigger variable the modal will be shown at all times.
 
 Then you just need to add an action, e.g. a button click to set the Session variable to `true` or `false` and the modal will fade in or out:
     
