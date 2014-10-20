@@ -2,7 +2,7 @@
 
 This package adds a simple modal menu, which can be shown using a Session variable.
 
-![Alt text](/screenshot.png?raw=true "Screenshot of a styled modal")
+![Alt text](https://raw.githubusercontent.com/frozeman/meteor-simple-modal/master/screenshot.png "Screenshot of a styled modal")
 
 ## Usage
 
