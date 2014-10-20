@@ -40,7 +40,7 @@ Template['simpleModal'].destroyed = function(){
     if(this._modalDocumentClickEvent)
         $(document).off('click', this._modalDocumentClickEvent);
 
-    if(template.data && this.data.trigger)
+    if(this.data && this.data.trigger)
         Session.set(this.data.trigger, false);
 };
 
