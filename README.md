@@ -6,7 +6,7 @@ This package adds a simple modal menu, which can be shown using a Session variab
 
 ## Usage
 
-To use the modal with a Session trigger simply add the modal somewhere in you template:
+To use the modal with a Session trigger simply add the modal somewhere in your template:
 
     {{#simpleModal trigger="mySessionVariableName" class="some-custom-class"}}
         // html content
