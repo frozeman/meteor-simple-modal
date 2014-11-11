@@ -1,17 +1,17 @@
 Package.describe({
   name: 'frozeman:simple-modal',
   summary: 'A simple modal to be triggered using a session variable',
-  version: '0.0.4',
+  version: '0.0.5',
   git: 'http://github.com/frozeman/meteor-simple-modal'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@0.9.4');
+  api.versionsFrom('METEOR@1.0');
   api.use('jquery', 'client');
   api.use('templating', 'client');
   api.use('session', 'client');
 
-  api.use('frozeman:animation-helper@0.2.0', 'client');
+  api.use('frozeman:animation-helper@0.2.5', 'client');
 
   api.addFiles('simple-modal.html', 'client');
   api.addFiles('simple-modal.css', 'client');
