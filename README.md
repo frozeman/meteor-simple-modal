@@ -25,6 +25,26 @@ Then you just need to add an action, e.g. a button click to set the Session vari
         }
     });
 
+### Using with `frozeman:template-var`
+
+You can also use the simple modal and trigger it via a template specific `template-var`.
+Just pass `template-var=true` and it will react to a template var of the template where the `{{#simpleModal}}` helper is in:
+
+    {{#simpleModal trigger="myTemplateVariableName" template-var=true}}
+        // html content
+    {{/simpleModal}}
+
+And trigger it like
+
+    Template.myTemplate.events({
+        'click button.show-modal': function(){
+            if(TemplateVar.get('myTemplateVariableName', true))
+                TemplateVar.set('myTemplateVariableName', false);
+            else
+                TemplateVar.set('myTemplateVariableName', true);
+        }
+    });
+
 
 ## Styling
 
