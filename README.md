@@ -53,7 +53,7 @@ The default styles are simply:
 ```css
 div.simple-modal {
     position: absolute;
-    width: 200px;
+    max-width: 200px;
     background-color: #fff;
 
     /* ANIMATION */
@@ -65,6 +65,15 @@ div.simple-modal {
     -moz-transition-duration: 200ms;
     -o-transition-duration: 200ms;
     transition-duration: 200ms;
+}
+div.simple-modal ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div.simple-modal li {
+    display: block;
 }
 
 div.simple-modal.animate {
